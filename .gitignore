@@ -1,0 +1,40 @@
+# Byte-compiled files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Environment files
+.env
+.env.*
+.venv
+venv/
+ENV/
+env/
+*.env
+
+# Django files
+db.sqlite3
+*.log
+
+# PyCharm, VSCode, and other IDEs
+.idea/
+.vscode/
+
+# Static and media files
+/static/
+media/
+
+# Migrations
+*/migrations/*
+!*/migrations/__init__.py
+
+# Coverage reports
+.coverage
+coverage.xml
+*.cover
+*.py,cover
+
+# Other files
+.DS_Store
+Thumbs.db
