@@ -9,4 +9,5 @@ class Product(models.Model):
 
     def __str__(self):
         #comment added to check git workflow on main branch
+        #this is to check if experimental changes are visible
         return self.title
