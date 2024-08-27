@@ -2,6 +2,7 @@ from django.http import JsonResponse
 from .models import Product
 
 def product_list(request):
+    #return all products
     products = Product.objects.all()  # Get all products
     product_list = [
         {
