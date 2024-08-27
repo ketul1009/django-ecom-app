@@ -9,4 +9,5 @@ class Product(models.Model):
 
     def __str__(self):
         #comment added to check git workflow on main branch
+        #return name of the product to be visible
         return self.title
