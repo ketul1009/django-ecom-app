@@ -3,7 +3,7 @@ from product.models import Product
 
 # Create your models here.
 class Variant(models.Model):
-    product_id = models.ForeignKey(Product, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
     title = models.CharField(max_length=256)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -11,4 +11,4 @@ class Variant(models.Model):
     price = models.DecimalField(max_digits=7, decimal_places=2)
 
     def __str__(self):
-        return self.title
+        return f"{self.product.title} {self.title}"

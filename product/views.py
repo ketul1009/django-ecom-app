@@ -1,9 +1,13 @@
 from django.http import JsonResponse
 from .models import Product
 
-def product_list(request):
+def get_products(request):
     #return all products
     products = Product.objects.all()  # Get all products
+    data = product_list(products)
+    return JsonResponse(data, safe=False)
+
+def product_list(products):
     product_list = [
         {
             'title': product.title,
@@ -14,4 +18,4 @@ def product_list(request):
         }
         for product in products
     ]
-    return JsonResponse(product_list, safe=False)
+    return product_list
