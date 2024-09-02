@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'product',
     'variant',
     'image',
-    'collection'
+    'collection',
+    'category'
 ]
 
 MIDDLEWARE = [

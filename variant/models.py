@@ -1,5 +1,6 @@
 from django.db import models
 from product.models import Product
+from category.models import Category
 
 # Create your models here.
 class Variant(models.Model):
